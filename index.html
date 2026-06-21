@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoClean Product and Services</title>
+    <link rel="shortcut icon" href="images/hero1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sweetalert.min.css">
+    <link rel="stylesheet" href="css/style-improved.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav"><span><i class="fa fa-bars text-white"></i></span></button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                  
+                </ul>
+               <div class="log m-2">
+                 <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+               </div>
+               <div class="log m-2">
+                <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signInModal">Signup</a>
+              </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-Close">
+                        
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Don't have an account? <a href="#" data-toggle="modal" data-target="#signInModal" data-bs-dismiss="modal">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-Close">
+                        
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="signInForm">
+                        <div class="form-group">
+                            <label for="signInName">Name</label>
+                            <input type="text" class="form-control" id="signInName" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="signInEmail">Email address</label>
+                            <input type="email" class="form-control" id="signInEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="signInPassword">Password</label>
+                            <input type="password" class="form-control" id="signInPassword" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-bs-dismiss="modal">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+
+    <div class="hero vh-100">
+        <div class="landing-text">
+            <h1>Welcome to <span class="text-warning">EcoCLean</span></h1>
+            <p>At EcoCLean, we understand the importance of having the right tools and equipment to enhance your remote work experience.<br> Our carefully curated selection of products is designed to support your comfort, productivity, and well-being while working from home.</p>
+            <a href="#" class="btn button">Get Started</a>
+        </div>
+    </div>
+
+
+    <section id="services">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">SERIVCES</h6>
+                    <h1>Our Services</h1>
+                    <p>At EcoCLean, we provide a range of services designed to enhance your remote work experience and improve your home office setup. Our services are tailored to meet the diverse needs of remote workers, from ergonomic solutions to comprehensive wellness programs</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect bounceInUp">
+                        <div class="iconbox">
+                            <i class='fas fa-user-tie'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Personalized Consulting</h5>
+                        <p>Our expert consultants work with you one-on-one to design a home office that maximizes comfort and productivity. We'll assess your current setup and provide customized recommendations to create an ergonomic and efficient workspace</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='fas fa-apple-alt'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Wellness Programs</h5>
+                        <p>Participate in our online wellness programs focused on mental health, stress management, and work-life balance. These programs include workshops, webinars, and resources to help you maintain well-being while working remotely </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='fas fa-cogs'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Product Recommendations</h5>
+                        <p>Based on your needs and preferences, we recommend high-quality ergonomic furniture and office accessories. Our goal is to help you find the right products that support your physical health and enhance your work environment. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='fas fa-tools'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Support and Maintenance</h5>
+                        <p>We offer ongoing support and maintenance for the products you purchase from us. Our team is available to address any issues or provide assistance with product setup and optimization. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='fas fa-laptop'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Call to Action</h5>
+                        <p>Explore our services and discover how we can help you create a more comfortable, productive, and balanced remote work environment. Contact us today to learn more about how we can support your remote work needs. </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="team">
+        <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary">TEAM</h6>
+            <h1>Meet Our Dedicated Team</h1>
+            <p>Our team at EcoCLean is comprised of passionate individuals committed to advancing our mission of eco-friendly cleaning. From product development to customer support, each team member brings expertise and dedication to ensuring that we provide the best solutions for our customers. Learn more about the people behind EcoCLean and see how their hard work and innovation drive our company forward. We are proud of our team and their commitment to creating a cleaner, greener future.</p>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="images/user1.jpg" alt="Emma Johnson">
+                        <h5 class="mb-0 mt-4">Emma Johnson</h5>
+                        <p>Product Development Lead</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Team Member 2 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="images/user2.jpg" alt="Liam Brown">
+                        <h5 class="mb-0 mt-4">Liam Brown</h5>
+                        <p>Marketing Manager</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-instagram'></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Team Member 3 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="images/user3.png" alt="Sophia Davis">
+                        <h5 class="mb-0 mt-4">Micheal Davis</h5>
+                        <p>Customer Support Specialist</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-pinterest-p'></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Team Member 4 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="images/user4.png" alt="Noah Wilson">
+                        <h5 class="mb-0 mt-4">Noah Wilson</h5>
+                        <p>Finance Director</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='fab fa-facebook-f'></i></a>
+                            <a href="#"><i class='fab fa-twitter'></i></a>
+                            <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="product">
+        <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary">PRODUCT</h6>
+            <h1>Our Eco-Friendly Products</h1>
+            <p>At EcoCLean, our products are crafted to meet the highest standards of sustainability and effectiveness. We offer a range of eco-friendly cleaning solutions that are safe for you and the environment. Each product is carefully formulated with natural ingredients to ensure powerful cleaning without compromising on safety or performance. Discover our collection and find the perfect solution for your cleaning needs. Join us in making a positive impact on the environment with every purchase.</p>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="images/p1.jpg" alt="EcoCLean Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">EcoCLean Cleaner</h5>
+                            <p class="card-text">Powerful all-purpose cleaner with eco-friendly ingredients.</p>
+                            <button class="btn btn-primary btn-read-more" onclick="showAlert('EcoCLean Cleaner', 'A versatile cleaner for every surface.')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="images/p2.jpg" alt="EcoCLean Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">EcoCLean Disinfectant</h5>
+                            <p class="card-text">Effective disinfectant with natural ingredients for a safer environment.</p>
+                            <button class="btn btn-primary btn-read-more" onclick="showAlert('EcoCLean Disinfectant', 'Natural disinfectant for a cleaner home.')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="images/p3.jpg" alt="EcoCLean Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">EcoCLean Glass Cleaner</h5>
+                            <p class="card-text">Crystal-clear glass cleaner with eco-friendly formula.</p>
+                            <button class="btn btn-primary btn-read-more" onclick="showAlert('EcoCLean Glass Cleaner', 'Achieve streak-free shine on all glass surfaces.')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="images/p4.jpg" alt="EcoCLean Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">EcoCLean Floor Cleaner</h5>
+                            <p class="card-text">Safe and effective floor cleaner for all types of flooring.</p>
+                            <button class="btn btn-primary btn-read-more" onclick="showAlert('EcoCLean Floor Cleaner', 'Deep clean your floors with our eco-friendly formula.')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="images/p5.jpg" alt="EcoCLean Product 5">
+                        <div class="card-body">
+                            <h5 class="card-title">EcoCLean Bathroom Cleaner</h5>
+                            <p class="card-text">Tough on grime, gentle on the environment for a sparkling bathroom.</p>
+                            <button class="btn btn-primary btn-read-more" onclick="showAlert('EcoCLean Bathroom Cleaner', 'For a fresh and clean bathroom with minimal effort.')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="images/p6.jpg" alt="EcoCLean Product 6">
+                        <div class="card-body">
+                            <h5 class="card-title">EcoCLean Kitchen Cleaner</h5>
+                            <p class="card-text">Specially formulated to tackle kitchen grease and grime.</p>
+                            <button class="btn btn-primary btn-read-more" onclick="showAlert('EcoCLean Kitchen Cleaner', 'Keep your kitchen spotless with our eco-friendly solution.')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+               
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">CONTACT</h6>
+                    <h1>Get In Touch</h1>
+                    <p>At EcoCLean, we value your feedback and are here to assist you with any questions or concerns you may have. Whether you need more information about our eco-friendly products, require assistance with an order, or have any suggestions for improvement, our dedicated customer service team is ready to help. Feel free to reach out to us via email, phone, or by filling out the contact form below. We strive to provide prompt and helpful responses to ensure your satisfaction. Thank you for choosing EcoCLean!</p>
+                </div>
+            </div>
+
+            <form action="" class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Enter E-mail">
+                </div>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" placeholder="Enter Subject">
+                </div>
+                <div class="col-md-10">
+                    <textarea name="" id="" cols="30" rows="5" class="form-control"
+                        placeholder="Enter Message"></textarea>
+                </div>
+                <div class="col-md-10 d-grid">
+                    <button class="btn btn-primary">Contact</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About EcoCLean</h2>
+                    <p>At EcoCLean, we are committed to providing environmentally friendly cleaning solutions that are both effective and sustainable. Founded with a passion for creating a healthier home and planet, our products are crafted using natural ingredients that deliver powerful results without harming the environment. We believe that every cleaning task can be accomplished with eco-friendly products that ensure safety and cleanliness for you and your family.</p>
+                    <p>Our mission is to reduce the ecological footprint of everyday cleaning by offering products that are biodegradable, non-toxic, and free from harsh chemicals. By choosing EcoCLean, you're not only ensuring a cleaner home but also contributing to a greener planet.</p>
+                    <p>Our dedicated team works tirelessly to innovate and improve our product line, ensuring that we meet the highest standards of quality and environmental responsibility. Thank you for supporting EcoCLean and joining us on our journey towards a more sustainable future.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/about.jpg" alt="About EcoCLean" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="EcoCLean Logo">
+                    </div>
+                    <p>EcoCLean is dedicated to providing sustainable and effective cleaning solutions for a healthier home and planet. Our products are designed with the environment in mind, ensuring that you can clean your home effectively while minimizing your ecological footprint.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Greenway Drive, Suite 400, EcoCity, EC 12345</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@ecoclean.com</p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6 footer-social">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/EcoCLean" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/EcoCLean" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/EcoCLean" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/ecoclean" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 EcoCLean. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        function showAlert() {
+            swal({
+                title: "Work in Progress",
+                text: "This feature is currently under development.",
+                type: "info",
+                confirmButtonText: "OK"
+            });
+        }
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+</body>
+</html>
